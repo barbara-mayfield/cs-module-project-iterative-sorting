@@ -24,7 +24,12 @@ def selection_sort(arr):
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
     # Your code here
-
+    for nums in range(len(arr)):
+        # We want the last pair of adjacent elements to be (n-2, n-1)
+        for i in range(len(arr) - 1):
+            if arr[i] > arr[i+1]:
+                # Swap
+                arr[i], arr[i+1] = arr[i+1], arr[i]
     return arr
 
 
