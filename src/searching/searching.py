@@ -10,12 +10,14 @@ def linear_search(arr, target):
 def binary_search(arr, target):
 
     # Your code here
+    # set pointers
     start = 0
     end = (len(arr) - 1)
     found = False
 
+    # set up a loop where start is less than or equal
     while start <= end and not found:
-        # get the middle index
+        # get the middle index by adding start and end and then dividing by 2
         mid = (start + end) // 2
 
         # compare the value in the middle with target
